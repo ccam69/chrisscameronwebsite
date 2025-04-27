@@ -46,15 +46,6 @@ h1 {
 }
 
 
-/* Fonts */
-h1 {
-    font-size: 64pt;
-    font-family: 'Kulture';
-    color: rgb(219, 221, 241);
-    font-weight: 300;
-    text-shadow: 0px 0px 26px rgba(131, 123, 75, 1);
-}
-
 #grid-container {
     position: absolute;
     top: 0;

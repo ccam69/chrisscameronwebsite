@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="radio-styles.css">
+  <script src="radio-song.js" defer></script>
+  <script src="bakcground-img-radio.js" defer></script>
+  <title>Chris Cameron's Website</title>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="menu-wrapper">
+      <div class="color-block"></div>
+      <section class="menu">
+        <span>
+          <a href="homepage.html" class="menu-item">Home</a>
+          <div class="line"></div>
+          <a href="sound-ecology.html" class="menu-item">Sound Ecology</a>
+          <div class="line"></div>
+          <a href="radio.html" class="menu-item">Radio</a>
+        </span>
+      </section>
+    </div>
+    <div class="radio-wrapper">
+      <div class="episode-title-wrapper">
+        <div class="episode-color-block"></div>
+        <h1 id="episode-title">Loading Episode...</h1>
+      </div>
+    </div>
+    <div class="radio-player-wrapper">
+      <div class="button-wrapper">
+      <button id="randomize-button">
+        <div class="button-color-block"></div>
+        <h2 class="button-text">Random</h2>
+      </button>
+    </div>
+    <div class="button-wrapper">
+      <button id="pause-button">
+        <div class="button-color-block"></div>
+        <h2 class="button-text">Pause</h2>
+      </button>
+      </div>
+      <div id="hidden-player" style="display: none;"></div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://w.soundcloud.com/player/api.js"></script>
+  <script src="https://widget.mixcloud.com/media/js/widgetApi.js"></script>
+
+</body>
+
+</html>
