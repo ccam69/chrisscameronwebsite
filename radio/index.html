@@ -11,7 +11,9 @@
 </head>
 
 <body>
-  <div class="top-date-text"><div class="top-date-type"></div></div>
+  <div class="top-date-text">
+    <div class="top-date-type"></div>
+  </div>
   <div class="grid-container">
     <div class="menu-wrapper">
       <div class="color-block"></div>
@@ -19,9 +21,9 @@
         <span>
           <a href="/" class="menu-item">Home</a>
           <div class="line"></div>
-          <a href="/sound-ecology/" class="menu-item">Sound Ecology</a>
+          <a href="/sound-ecology" class="menu-item">Sound Ecology</a>
           <div class="line"></div>
-          <a href="/radio/" class="menu-item">Radio</a>
+          <a href="/radio" class="menu-item">Radio</a>
         </span>
       </section>
     </div>
@@ -33,20 +35,24 @@
     </div>
     <div class="radio-player-wrapper">
       <div class="button-wrapper">
-      <button id="randomize-button">
-        <div class="button-color-block"></div>
-        <h2 class="button-text">Random</h2>
-      </button>
-    </div>
-    <div class="button-wrapper">
-      <button id="pause-button">
-        <div class="button-color-block"></div>
-        <h2 class="button-text">Pause</h2>
-      </button>
+        <button id="randomize-button">
+          <div class="button-color-block"></div>
+          <h2 class="button-text">Random</h2>
+        </button>
+      </div>
+      <div class="button-wrapper">
+        <button id="pause-button">
+          <div class="button-color-block"></div>
+          <h2 class="button-text">Pause</h2>
+        </button>
       </div>
       <div id="hidden-player" style="display: none;"></div>
     </div>
+    <div class="bottom-menu">
+      <button class="menu-btn" id="menuBtn">Menu</button>
+    </div>
   </div>
+      <div class="menu-overlay" id="menuOverlay"></div>
 
 
 

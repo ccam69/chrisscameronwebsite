@@ -65,6 +65,7 @@ p{
     font-size: 18pt;
     color: rgb(155, 149, 110);
     font-weight: 300;
+    line-height: 1.2;
     transition: all 0.3s ease; 
 }
 
@@ -181,6 +182,7 @@ p{
     font-size: 18pt !important;
     color: rgb(155, 149, 110);
     font-weight: 300;
+    line-height: 1.2;
     transition: all 0.3s ease; 
 }
   .menu{
@@ -298,22 +300,29 @@ p{
     }
     .grid-container {
         padding: 0 1.2em !important;
-        margin-top: 60px !important;
+        margin-top: 70px !important;
         transition: all 0.3s ease;
     }
 
     h1{
-    font-size: 36pt;
+    font-size: 42pt !important;
     transition: all 0.3s ease;
     }
 
     h2{
-        font-size: 24pt;
+        font-size: 24pt !important;
         transition: all 0.3s ease;
     }
 
     .big-text {
-        font-size: 24pt;
+        font-size: 24pt !important;
+        transition: all 0.3s ease;
+        padding-bottom: 30px;
+        margin-top: -14px;
+    }
+    p{
+        font-size: 14pt !important;
+        line-height: 1.4 !important;
         transition: all 0.3s ease;
     }
 
@@ -324,17 +333,17 @@ p{
     .introduction-container, .text-container {
     display: block !important;
     text-align: left;
-    column-gap: 20px;
     }
 
     .img-interaction {
         width: 100%;
         display: block !important;
+        padding-bottom: 30px;
     }
     
     .image-interaction {
     color: rgb(117, 178, 52);
-    font-size: 24px;
+    font-size: 16pt; 
     transition: all 0.3s ease;
     background-color: transparent;
     border: 2px solid rgb(117, 178, 52);
@@ -359,19 +368,19 @@ p{
     margin: 0;
     box-sizing: border-box;
 }
-.button{
+.button a {
     color: rgb(117, 178, 52);
-    font-size: 24pt;
+    font-size: 16pt;
     transition: all 0.3s ease;
     background-color: transparent;
     border: 2px solid rgb(117, 178, 52);
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
-    display: block;      /* Make it a block element */
-    width: 100%;         /* Full width of parent */
-    box-sizing: border-box; /* Include padding/border in width */
-    margin: 0 auto;      /* Center if parent is narrower */
+    display: block;     
+    width: 100%;        
+    box-sizing: border-box; 
+    margin: 0 auto;      
     
 }
 
@@ -385,11 +394,12 @@ p{
 }
 
 .bottom-menu {
+    display: flex !important;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100vw;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     display: flex;
@@ -397,7 +407,8 @@ p{
     align-items: center;
     padding: 20px 0 16px;
     z-index: 1000;
-    gap: 2em; /* space between lines and button */
+    gap: 0; 
+    z-index: 2000;
 }
 
 
@@ -405,16 +416,25 @@ p{
     content: "";
     flex: 1 1 0;
     height: 3px;
-    background: rgba(219, 221, 241, 0.7);
-    margin: 0 1em 0 9em;
+    background: rgba(219, 221, 241, 1);
+    text-shadow: 0px 0px 16px rgb(255, 255, 255);
+    margin: 0 1em 0 4em;
 }
 
 .bottom-menu::after{
     content: "";
     flex: 1 1 0;
     height: 3px;
-    background: rgba(219, 221, 241, 0.7);
-    margin: 0 9em 0 1em;
+    background: rgba(219, 221, 241, 1);
+    text-shadow: 0px 0px 16px rgb(255, 255, 255);
+    margin: 0 4em 0 1em;
+}
+
+.overlay-divider {
+    width: 86%;
+    border: none;
+    border-top: 3px solid #fff;
+    margin: 1em 0;
 }
 
 .menu-btn {
@@ -440,11 +460,13 @@ p{
     top: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0,0,0,0.85);
+    background: rgba(0,0,0,0.3);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     justify-content: center;
     align-items: center;
+    z-index: 1000; 
+    padding-bottom: 80px; 
 }
 
 .menu-overlay.active {
@@ -455,8 +477,37 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2em;
+    gap: 6vh;
+    transition: all 0.3s ease;
 }
+
+.mobile-menu-link{
+    font-family: 'TASA', sans-serif;
+     text-shadow: 0px 0px 36px rgba(219, 221, 241, 1);
+    font-size: 54pt;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-link a{
+    font-family: 'TASA', sans-serif;
+     text-shadow: 0px 0px 36px rgba(219, 221, 241, 1);
+    font-size: 54pt;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-link a:hover{
+    font-family: 'TASA', sans-serif;
+     text-shadow: 0px 0px 36px rgba(219, 221, 241, 1);
+    font-size: 54pt;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
 
 .overlay-link {
     color: #fff;
@@ -481,10 +532,31 @@ p{
     cursor: pointer;
 }
 
+.menu-overlay.active ~ .bottom-menu,
+.menu-overlay.active + .bottom-menu,
+.menu-overlay.active .bottom-menu,
+.menu-overlay.active ~ .grid-container .bottom-menu {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+body.menu-open .bottom-menu {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
 #profile-image {
     max-height: 500px !important;
 }
 
+.top-date-type {
+    font-size: 14pt;
+    line-height: 1.4 !important;
+    transition: all 0.3s ease;
+    padding: 0 1.2em !important;
+}
 
 }
 
@@ -529,6 +601,13 @@ p{
     margin: 0 2em;
 }
 
+.bottom-menu{
+    display: none;
+}
+
+.menu-overlay{
+    display: none;;
+}
 
 /*Grid System */
 
