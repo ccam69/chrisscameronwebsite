@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="top-date.js" defer></script>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/top-date.js" defer></script>
     <title>Chris Cameron's Website - Sound Ecology</title>
 </head>
 
@@ -14,17 +14,17 @@
     <div class="grid-container">
         <section class="menu">
             <span>
-                <a href="homepage.html" class="menu-item">Home</a>
+                <a href="/index.html" class="menu-item">Home</a>
                 <div class="line"></div>
-                <a href="sound-ecology.html" class="menu-item">Sound Ecology</a>
+                <a href="index.html" class="menu-item">Sound Ecology</a>
                 <div class="line"></div>
-                <a href="radio.html" class="menu-item">Radio</a>
+                <a href="/radio/index.html" class="menu-item">Radio</a>
             </span>
         </section>
         <section class="full-length">
             <h1>Sound Ecology</h1>
         </section>
-        <section class="text-container">
+        <section class="introduction-container">
             <div class="text">
                 <p>
                     Sound Ecology is managed by a collective of scientists and sound artists who wanted to bring
@@ -43,8 +43,8 @@
             <div class="sub-menu">
                 <div class="sub-menu-sound-ecology">
                     <h2>Sound Ecology</h2>
-                    <p><a href="https://www.instagram.com/sound.ecology/" target="_blank">Instagram</a></p>
-                    <p><a href="https://www.internetpublicradio.live/shows/sound-ecology" target="_blank">Podcast</a></p>
+                    <p><span class="button"><a href="https://www.instagram.com/sound.ecology/" target="_blank">Instagram</a></span></p>
+                    <p><span class="button"><a href="https://www.internetpublicradio.live/shows/sound-ecology" target="_blank">Podcast</a></span></p>
                 </div>
             </div>
         </section>
@@ -195,9 +195,39 @@
                 <p>Premiere episode introducing ourselves sonically.</p>
             </span>
         </section>
-
+        <div class="bottom-menu">
+        <button class="menu-btn" id="menuBtn">Menu</button>
+        </div>
 
     </div>
+
+                <div class="menu-overlay" id="menuOverlay">
+
+
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const menuOverlay = document.getElementById('menuOverlay');
+
+menuBtn.addEventListener('click', function() {
+    if (menuOverlay.classList.contains('active')) {
+        menuOverlay.classList.remove('active');
+        menuBtn.textContent = 'Menu';
+    } else {
+        menuOverlay.classList.add('active');
+        menuBtn.textContent = 'Close';
+    }
+});
+
+// Optional: close overlay when clicking outside the menu content
+menuOverlay.addEventListener('click', function(e) {
+    if (e.target === this) {
+        menuOverlay.classList.remove('active');
+        menuBtn.textContent = 'Menu';
+    }
+});
+</script>
+
+
 </body>
 
 </html>

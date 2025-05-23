@@ -4,29 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="enter-styles.css">
-    <script src="background-img-enter.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="top-date.js" defer></script>
     <title>Chris Cameron's Website</title>
 </head>
 
 <body>
-    <div id="grid-container"></div>
-    <div class="marquee">
-        <div class="track">
-            <div class="content"></div>
-            <h1>This is Chris Cameron's website, click anywhere to enter! This is Chris Cameron's website, click
-                anywhere to enter! This is Chris Cameron's website, click anywhere to enter!</h1>
-        </div>
-    </div>
-    </div>
-    <div class="color-block"></div>
+    <div class="top-date-text"><div class="top-date-type"></div></div>
 
-    <script>
-        document.body.addEventListener('click', function() {
-            window.location.href = 'homepage.html'; 
-        });
-    </script>
+    <div class="grid-container">
+        <section class="menu">
+            <span>
+                <a href="index.html" class="menu-item">Home</a>
+                <div class="line"></div>
+                <a href="/sound-ecology/index.html" class="menu-item">Sound Ecology</a>
+                <div class="line"></div>
+                <a href="/radio/index.html" class="menu-item">Radio</a>
+            </span>
+        </section>
+        <section class="introduction-container">
+            <div class="introduction">
+                <h1>Chris Cameron</h1>
+                <div class="big-text">I’m a scientist and researcher, interested in investigating human rights violations related to environmental injustices.</div>
+                <!-- <p id="image-toggle" class="image-interaction">click for profile image</p> -->
+            </div>
+            <div class="img-interaction">
+                <img id="profile-image" src="/imgs/chris-profile-2.jpg">
+            </div>
+        </section>
 
+        <section class="text-container">
+            <div class="text">
+                <p>
+                    I have been researching for 10 years starting as a microscopy-trained geneticist in cancer research
+                    moving into the climate justice policy-sphere over the last 4 years.
+                    My interest in investigating human rights violations related to environmental injustices has led to
+                    my
+                    current research into strategic litigation support for communities
+                    experiencing harm from data centers. I enjoy co-designing projects with communities related to
+                    environmental rights advocacy and digital storytelling. I also host an
+                    investigative radio project called <a href="https://soundcloud.com/soundecology1"
+                        target="_blank">Sound Ecology</a>,
+                    a
+                    space for climate-oriented artists to share their sonic toolkits for the climate collapse.
+                    <a href="https://soundcloud.com/soundecology1" target="_blank">Sound Ecology</a> has been running
+                    since 2022 and we keep evolving, learning and moving into the investigation world. <br>
+                    <br>
+                    I have a Master of Science degree from McGill University in Canada and I am fluent in
+                    English, French and Spanish. I am learning and speaking colloquial German. <br>
+                </p>
+                <br>
+                <h2>Recent Publication</h2>
+                <p>
+                    Cameron, C, Barakat, H, Prest, E and Juneja, P (2025).<br>
+                    <span class="italic">
+                    Where Cloud meets Cement: A Case Study Analysis of Data Center Development.</span>
+                    Self-published on <a href="https://www.themaybe.org/research/data-center-report-where-cloud-meets-cement" target="_blank">The Maybe</a>.<br>
+                    <br>
+                    <span class="italic">A deep dive into 5 case studies of data center resistance and development
+                        across the globe.</span>
+                </p>
+            </div>
+            <div class="sub-menu">
+                <div class="sub-menu-contact-info">
+                    <p><span class="button"><a href="https://docs.google.com/document/d/14BVek9N91cgTyhBqI6ZgblT7zkvC7W_0e99C40Ay_1M/edit?usp=sharing"
+                            target="_blank">CV</a></span></p>
+                    <p><span class="button"><a href="mailto:cameroncscoop@gmail.com">Email</a></span></p>
+                    <p><span class="button"><a href="https://www.themaybe.org/research/data-center-report-where-cloud-meets-cement" target="_blank">Publication</a></span></p>
+                    <br>
+                </div>
+                <div class="sub-menu-sound-ecology">
+                    <h2>Sound Ecology</h2>
+                    <p><span class="button"><a href="https://www.instagram.com/sound.ecology/" target="_blank">Instagram</a></span></p>
+                    <p><span class="button"><a href="https://www.internetpublicradio.live/shows/sound-ecology" target="_blank">Podcast</a></span>
+                    </p>
+                </div>
+            </div>
+
+    </div>
 </body>
+
+<!-- <script>
+document.getElementById("image-toggle").addEventListener("click", function () {
+    let image = document.getElementById("profile-image");
+    if (image.style.opacity === "0" || image.style.opacity === "") {
+        image.style.opacity = "1"; 
+    } else {
+        image.style.opacity = "0"; 
+    }
+});
+</script> -->
+
 
 </html>
