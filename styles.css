@@ -93,7 +93,7 @@ a:hover{
     color: rgb(219, 221, 241);
     font-size: 18pt;
     font-family: 'TASA';
-    text-shadow: 0px 0px 16px rgba(30, 30, 30, 1);
+    text-shadow: 0px 0px 16px rgba(219, 221, 241, 1);
     transition: all 0.3s ease; 
 }
 .menu-item{
@@ -101,7 +101,7 @@ a:hover{
     font-size: 18pt;
     font-family: 'TASA';
     text-decoration: none;
-    text-shadow: 0px 0px 16px rgba(30, 30, 30, 1);
+    text-shadow: 0px 0px 16px rgba(219, 221, 241, 1);
     transition: all 0.3s ease; 
 }
 .menu-item:hover{
@@ -525,6 +525,7 @@ p{
     flex-grow: 1;
     height: 2px;
     background-color: rgb(217, 217, 217);
+    text-shadow: 0px 0px 16px rgba(219, 221, 241, 1);
     margin: 0 2em;
 }
 
