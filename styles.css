@@ -136,7 +136,7 @@ a:hover{
 /* SCREEN SIZES */
 
 /*Medium Screens */
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1720px) {
 h1{
     font-size: 64pt !important;
     font-family: 'Kulture';
@@ -224,11 +224,11 @@ p{
     width: fit-content;
 }
     #profile-image {
-    max-height: 400px !important;
+    max-height: 500px !important;
 }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1720px) {
         h1{
     font-size: 54pt !important;
     transition: all 0.3s ease;
@@ -278,7 +278,7 @@ p{
     }
 
     .big-text {
-        font-size: 32pt !important;
+        font-size: 28pt !important;
         transition: all 0.3s ease;
     }
     #profile-image {
@@ -603,7 +603,7 @@ p{
     object-fit: cover;       
     display: block;
     margin: 0 auto;
-    object-position: top;   
+    object-position: bottom;   
     transition: opacity 0.5s ease-in-out;
 }
 
