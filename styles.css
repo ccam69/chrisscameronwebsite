@@ -348,7 +348,7 @@ a:hover {
     display: flex!important;
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
     width: 100vw;
     background: rgba(0,0,0,.3);
     backdrop-filter: blur(8px);
@@ -356,7 +356,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0 16px;
+    padding: 10px 0 8px;
     z-index: 1000;
     gap: 0;
     z-index: 2000
@@ -387,7 +387,7 @@ a:hover {
     color: #fff;
     background: 0 0;
     border: #ffffff00;
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
     color: #dbddf1;
     font-family: TASA;
@@ -420,12 +420,12 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6vh;
+    gap: 4vh;
     transition: all .3s ease
   }
   .mobile-menu-link {
     font-family: TASA,sans-serif;
-    text-shadow: 0 0 36px #dbddf1;
+    text-shadow: 0 0 24px #dbddf1;
     font-size: 54pt;
     font-weight: 600;
     text-align: center;
@@ -433,7 +433,7 @@ a:hover {
   }
   .mobile-menu-link a {
     font-family: TASA,sans-serif;
-    text-shadow: 0 0 36px #dbddf1;
+    text-shadow: 0 0 24px #dbddf1;
     font-size: 54pt;
     font-weight: 600;
     text-align: center;
@@ -441,7 +441,7 @@ a:hover {
   }
   .mobile-menu-link a:hover {
     font-family: TASA,sans-serif;
-    text-shadow: 0 0 36px #dbddf1;
+    text-shadow: 0 0 24px #dbddf1 !important;
     font-size: 54pt;
     font-weight: 600;
     text-align: center;
