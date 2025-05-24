@@ -48,13 +48,44 @@
       </div>
       <div id="hidden-player" style="display: none;"></div>
     </div>
-    <div class="bottom-menu">
-      <button class="menu-btn" id="menuBtn">Menu</button>
+    <section class="bottom-menu">
+      <button class="menu-btn" id="menuBtn">menu</button>
+    </section>
+  </div>
+  <div class="menu-overlay" id="menuOverlay">
+    <div class="menu-overlay-content">
+      <span class="mobile-menu-link"><a href="/" class="overlay-link">Home</a></span>
+      <hr class="overlay-divider">
+      <span class="mobile-menu-link"><a href="/sound-ecology/" class="overlay-link">Sound Ecology</a></span>
+      <hr class="overlay-divider">
+      <span class="mobile-menu-link"><a href="/radio/" class="overlay-link">Radio</a></span>
     </div>
   </div>
-      <div class="menu-overlay" id="menuOverlay"></div>
 
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const menuOverlay = document.getElementById('menuOverlay');
 
+menuBtn.addEventListener('click', function () {
+    if (menuOverlay.classList.contains('active')) {
+        menuOverlay.classList.remove('active');
+        document.body.classList.remove('menu-open');
+        menuBtn.textContent = 'Menu';
+    } else {
+        menuOverlay.classList.add('active');
+        document.body.classList.add('menu-open');
+        menuBtn.textContent = 'Close';
+    }
+});
+
+menuOverlay.addEventListener('click', function (e) {
+    if (e.target === this) {
+        menuOverlay.classList.remove('active');
+        document.body.classList.remove('menu-open');
+        menuBtn.textContent = 'Menu';
+    }
+});
+</script>
 
 
   <script src="https://w.soundcloud.com/player/api.js"></script>
