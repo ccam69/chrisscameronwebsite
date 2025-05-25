@@ -81,7 +81,9 @@ a:hover {
   font-size: 18pt;
   font-family: TASA;
   text-shadow: 0 0 16px #dbddf1;
-  transition: all .3s ease
+  transition: all .3s ease;
+  font-weight: 300;
+  letter-spacing: 0;
 }
 .menu-item {
   color: #dbddf1;
@@ -395,7 +397,9 @@ a:hover {
     transition: all .3s ease;
     border-radius: 8px;
     cursor: pointer;
-    z-index: 1
+    z-index: 1;
+    font-weight: 600;
+    letter-spacing: 0.1em;
   }
   .menu-overlay {
     display: none;
@@ -425,7 +429,7 @@ a:hover {
   }
   .mobile-menu-link {
     font-family: TASA,sans-serif;
-    text-shadow: 0 0 24px #dbddf1;
+    text-shadow: 0 0 14px #dbddf1;
     font-size: 54pt;
     font-weight: 600;
     text-align: center;
@@ -433,7 +437,7 @@ a:hover {
   }
   .mobile-menu-link a {
     font-family: TASA,sans-serif;
-    text-shadow: 0 0 24px #dbddf1;
+    text-shadow: 0 0 14px #dbddf1;
     font-size: 54pt;
     font-weight: 600;
     text-align: center;
@@ -441,7 +445,7 @@ a:hover {
   }
   .mobile-menu-link a:hover {
     font-family: TASA,sans-serif;
-    text-shadow: 0 0 24px #dbddf1 !important;
+    text-shadow: 0 0 14px #dbddf1 !important;
     font-size: 54pt;
     font-weight: 600;
     text-align: center;

@@ -43,7 +43,8 @@ h2 {
 h2:hover {
   color: #dbddf1;
   filter: blur(2px);
-  text-shadow: 0 0 26px #837b4b
+  text-shadow: 0 0 16px #dbddf1;
+  background-color: rgba(105,202,2,0)
 }
 .menu {
   color: #dbddf1;
@@ -58,7 +59,10 @@ h2:hover {
   height: 60px;
   margin-top: 20px;
   text-align: center;
-  width: 100%
+  width: 100%;
+  font-weight: 300;
+  line-height: 0;
+
 }
 .menu-item {
   color: #dbddf1;
@@ -74,7 +78,6 @@ h2:hover {
   text-shadow: 0 0 16px #dbddf1;
   background-color: rgba(105,202,2,0)
 }
-/*Screen Sizes*/
 @media screen and (min-width:1720px) {
   h1 {
     font-size: 64pt!important;
@@ -212,7 +215,6 @@ h2:hover {
     max-height: 360px!important
   }
 }
-/*Mobile Sizes*/
 @media screen and (max-width:800px) {
   .menu {
     display: none!important
@@ -323,7 +325,9 @@ h2:hover {
     transition: all .3s ease;
     border-radius: 8px;
     cursor: pointer;
-    z-index: 1
+    z-index: 1;
+    font-weight: 600;
+    letter-spacing: 0.1em;
   }
   .menu-overlay {
     display: none;
@@ -353,7 +357,7 @@ h2:hover {
   }
   .mobile-menu-link {
     font-family: TASA,sans-serif;
-    text-shadow: 0 0 24px #dbddf1;
+    text-shadow: 0 0 14px #dbddf1;
     font-size: 54pt;
     font-weight: 600;
     text-align: center;
@@ -361,7 +365,7 @@ h2:hover {
   }
   .mobile-menu-link a {
     font-family: TASA,sans-serif;
-    text-shadow: 0 0 24px #dbddf1;
+    text-shadow: 0 0 14px #dbddf1;
     font-size: 54pt;
     font-weight: 600;
     text-align: center;
@@ -369,7 +373,7 @@ h2:hover {
   }
   .mobile-menu-link a:hover {
     font-family: TASA,sans-serif;
-    text-shadow: 0 0 24px #dbddf1 !important;
+    text-shadow: 0 0 14px #dbddf1!important;
     font-size: 54pt;
     font-weight: 600;
     text-align: center;
@@ -383,7 +387,7 @@ h2:hover {
     transition: color .2s
   }
   .overlay-link:hover {
-    color: #75b234
+    text-shadow: 0 0 14px #dbddf1!important
   }
   .close-overlay {
     background: 0 0;
@@ -408,8 +412,8 @@ h2:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 60px; 
-    padding: 4rem;
+    gap: 60px;
+    padding: 4rem
   }
 }
 .menu {
@@ -431,6 +435,22 @@ h2:hover {
   height: 2px;
   background-color: #d9d9d9;
   margin: 0 2em
+}
+.menu-overlay {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding-bottom: 80px
 }
 .color-block {
   position: absolute;
@@ -468,17 +488,6 @@ h2:hover {
   align-items: center;
   padding-top: 10%
 }
-  .radio-player-wrapper {
-    display: flex;
-    position: relative;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 60px; 
-    padding: 4rem;
-    z-index: 2;
-  }
 .radio-player-wrapper {
   grid-column: 2/6;
   position: relative;
@@ -487,7 +496,7 @@ h2:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem;
+  padding: 4rem
 }
 .bottom-menu {
   display: none
