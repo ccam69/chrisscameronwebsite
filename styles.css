@@ -139,6 +139,16 @@ a:hover {
   transition: all .3s ease;
   text-decoration: none;
 }
+a.email-text-p:hover {
+    background: transparent !important;
+    color: #dbddf1 !important;
+    text-shadow: 0 0 26px #dbddf1 !important
+}
+a.email-text-h1 {
+      background: transparent !important;
+    color: #dbddf1 !important;
+    text-shadow: 0 0 26px #dbddf1 !important
+}
 @media screen and (min-width:1720px) {
   h1 {
     font-size: 64pt!important;
