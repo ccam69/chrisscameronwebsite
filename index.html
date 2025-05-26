@@ -4,136 +4,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="enter-styles.css">
     <link rel="stylesheet" href="styles.css">
     <script src="top-date.js" defer></script>
+    <script src="background-img-enter.js" defer></script>
+    <script src="menu-interaction.js" defer></script>
     <title>Chris Cameron's Website</title>
 </head>
 
 <body>
-    <div class="top-date-text">
-        <div class="top-date-type"></div>
-    </div>
+    <section class="enter-page">
 
-    <div class="grid-container">
-        <section class="menu">
-            <span>
-                <a href="index.html" class="menu-item">Home</a>
-                <div class="line"></div>
-                <a href="/sound-ecology" class="menu-item">Sound Ecology</a>
-                <div class="line"></div>
-                <a href="/radio" class="menu-item">Radio</a>
-            </span>
-        </section>
-        <section class="introduction-container">
-            <div class="introduction">
-                <h1>Chris Cameron</h1>
-                <div class="big-text">I’m a scientist and researcher, interested in investigating human rights
-                    violations related to environmental injustices.</div>
-                <!-- <p id="image-toggle" class="image-interaction">click for profile image</p> -->
+        <div id="grid-container"></div>
+        <div class="marquee">
+            <div class="track">
+                <div class="content"></div>
+                <span class="h1-enter">This is Chris Cameron's website, click anywhere to enter! This is Chris Cameron's
+                    website, click anywhere to enter! This is Chris Cameron's website, click anywhere to enter!</span>
+                <span class="h1-enter">This is Chris Cameron's website, click anywhere to enter! This is Chris Cameron's
+                    website, click anywhere to enter! This is Chris Cameron's website, click anywhere to enter!</span>
             </div>
-            <div class="img-interaction">
-                <img id="profile-image" src="/imgs/chris-profile-2.jpg">
-            </div>
-        </section>
+        </div>
+        <div class="color-block"></div>
+    </section>
 
-        <section class="text-container">
-            <div class="text">
-                <p>
-                    I have been researching for 10 years starting as a microscopy-trained geneticist in cancer research
-                    moving into the climate justice policy-sphere over the last 4 years.
-                    My interest in investigating human rights violations related to environmental injustices has led to
-                    my
-                    current research into strategic litigation support for communities
-                    experiencing harm from data centers. I enjoy co-designing projects with communities related to
-                    environmental rights advocacy and digital storytelling. I also host an
-                    investigative radio project called <a href="https://soundcloud.com/soundecology1"
-                        target="_blank">Sound Ecology</a>,
-                    a
-                    space for climate-oriented artists to share their sonic toolkits for the climate collapse.
-                    <a href="https://soundcloud.com/soundecology1" target="_blank">Sound Ecology</a> has been running
-                    since 2022 and we keep evolving, learning and moving into the investigation world. <br>
-                    <br>
-                    I have a Master of Science degree from McGill University in Canada and I am fluent in
-                    English, French and Spanish. I am learning and speaking colloquial German. <br>
-                </p>
-                <br>
-                <h2>Recent Publication</h2>
-                <p>
-                    Cameron, C, Barakat, H, Prest, E and Juneja, P (2025).<br>
-                    <span class="italic">
-                        Where Cloud meets Cement: A Case Study Analysis of Data Center Development.</span>
-                    Self-published on <a
-                        href="https://www.themaybe.org/research/data-center-report-where-cloud-meets-cement"
-                        target="_blank">The Maybe</a>.<br>
-                    <br>
-                    <span class="italic">A deep dive into 5 case studies of data center resistance and development
-                        across the globe.</span>
-                </p>
-            </div>
-            <div class="sub-menu">
-                <div class="sub-menu-contact-info">
-                    <p><span class="button"><a
-                                href="https://docs.google.com/document/d/14BVek9N91cgTyhBqI6ZgblT7zkvC7W_0e99C40Ay_1M/edit?usp=sharing"
-                                target="_blank">CV</a></span></p>
-                    <p><span class="button"><a href="mailto:cameroncscoop@gmail.com">Email</a></span></p>
-                    <p><span class="button"><a
-                                href="https://www.themaybe.org/research/data-center-report-where-cloud-meets-cement"
-                                target="_blank">Publication</a></span></p>
-                    <br>
+    <section class="homepage" style="display:none;">
+        <div class="top-date-text">
+            <div class="top-date-type"></div>
+        </div>
+
+        <div class="grid-container">
+            <section class="menu">
+                <span>
+                    <a href="index.html" class="menu-item">Home</a>
+                    <div class="line"></div>
+                    <a href="/sound-ecology" class="menu-item">Sound Ecology</a>
+                    <div class="line"></div>
+                    <a href="/radio" class="menu-item">Radio</a>
+                </span>
+            </section>
+            <section class="introduction-container">
+                <div class="introduction">
+                    <h1>Chris Cameron</h1>
+                    <div class="big-text">I’m a scientist and researcher, interested in investigating human rights
+                        violations related to environmental injustices.</div>
+                    <!-- <p id="image-toggle" class="image-interaction">click for profile image</p> -->
                 </div>
-                <div class="sub-menu-sound-ecology">
-                    <h2>Sound Ecology</h2>
-                    <p><span class="button"><a href="https://www.instagram.com/sound.ecology/"
-                                target="_blank">Instagram</a></span></p>
-                    <p><span class="button"><a href="https://www.internetpublicradio.live/shows/sound-ecology"
-                                target="_blank">Podcast</a></span>
+                <div class="img-interaction">
+                    <img id="profile-image" src="/imgs/chris-profile-2.jpg">
+                </div>
+            </section>
+
+            <section class="text-container">
+                <div class="text">
+                    <p>
+                        I have been researching for 10 years starting as a microscopy-trained geneticist in cancer
+                        research
+                        moving into the climate justice policy-sphere over the last 4 years.
+                        My interest in investigating human rights violations related to environmental injustices has led
+                        to
+                        my
+                        current research into strategic litigation support for communities
+                        experiencing harm from data centers. I enjoy co-designing projects with communities related to
+                        environmental rights advocacy and digital storytelling. I also host an
+                        investigative radio project called <a href="https://soundcloud.com/soundecology1"
+                            target="_blank">Sound Ecology</a>,
+                        a
+                        space for climate-oriented artists to share their sonic toolkits for the climate collapse.
+                        <a href="https://soundcloud.com/soundecology1" target="_blank">Sound Ecology</a> has been
+                        running
+                        since 2022 and we keep evolving, learning and moving into the investigation world. <br>
+                        <br>
+                        I have a Master of Science degree from McGill University in Canada and I am fluent in
+                        English, French and Spanish. I am learning and speaking colloquial German. <br>
                     </p>
+                    <br>
+                    <h2>Recent Publication</h2>
+                    <p>
+                        Cameron, C, Barakat, H, Prest, E and Juneja, P (2025).<br>
+                        <span class="italic">
+                            Where Cloud meets Cement: A Case Study Analysis of Data Center Development.</span>
+                        Self-published on <a
+                            href="https://www.themaybe.org/research/data-center-report-where-cloud-meets-cement"
+                            target="_blank">The Maybe</a>.<br>
+                        <br>
+                        <span class="italic">A deep dive into 5 case studies of data center resistance and development
+                            across the globe.</span>
+                    <div class="email-text">
+                            <a href="mailto:cameroncscoop@gmail.com" class="email-text-h1">@</a>
+                            <a href="mailto:cameroncscoop@gmail.com" class="email-text-p">Write me at cameroncscoop@gmail.com if you’d like to speak more
+                                about:
+                                the intersection of technology and environmental justice, data center litigation
+                                strategies
+                                and how we can implement research for direct action on the ground.</a>
+                    </div>
                 </div>
-            </div>
-        </section>
+                <div class="sub-menu">
+                    <div class="sub-menu-contact-info">
+                        <p><span class="button"><a
+                                    href="https://docs.google.com/document/d/14BVek9N91cgTyhBqI6ZgblT7zkvC7W_0e99C40Ay_1M/edit?usp=sharing"
+                                    target="_blank">CV</a></span></p>
+                        <p><span class="button"><a href="mailto:cameroncscoop@gmail.com">Email</a></span></p>
+                        <p><span class="button"><a
+                                    href="https://www.themaybe.org/research/data-center-report-where-cloud-meets-cement"
+                                    target="_blank">Publication</a></span></p>
+                        <br>
+                    </div>
+                    <div class="sub-menu-sound-ecology">
+                        <h2>Sound Ecology</h2>
+                        <p><span class="button"><a href="https://www.instagram.com/sound.ecology/"
+                                    target="_blank">Instagram</a></span></p>
+                        <p><span class="button"><a href="https://www.internetpublicradio.live/shows/sound-ecology"
+                                    target="_blank">Podcast</a></span>
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-       <section class="bottom-menu">
-            <button class="menu-btn" id="menuBtn">menu</button>
-        </section>
-    </div>
-    <div class="menu-overlay" id="menuOverlay">
-    <div class="menu-overlay-content">
-        <span class="mobile-menu-link"><a href="/" class="overlay-link">Home</a></span>
-        <hr class="overlay-divider">
-        <span class="mobile-menu-link"><a href="/sound-ecology" class="overlay-link">Sound Ecology</a></span>
-        <hr class="overlay-divider">
-        <span class="mobile-menu-link"><a href="/radio" class="overlay-link">Radio</a></span>
-    </div>
-    </div>
-    
+            <section class="bottom-menu">
+                <button class="menu-btn" id="menuBtn">menu</button>
+            </section>
+        </div>
+        <div class="menu-overlay" id="menuOverlay">
+            <div class="menu-overlay-content">
+                <span class="mobile-menu-link"><a href="/" class="overlay-link">Home</a></span>
+                <hr class="overlay-divider">
+                <span class="mobile-menu-link"><a href="/sound-ecology" class="overlay-link">Sound Ecology</a></span>
+                <hr class="overlay-divider">
+                <span class="mobile-menu-link"><a href="/radio" class="overlay-link">Radio</a></span>
+            </div>
+        </div>
+    </section>
+
+
 </body>
 
+<!-- Transition to Homepage -->
 <script>
-const menuBtn = document.getElementById('menuBtn');
-const menuOverlay = document.getElementById('menuOverlay');
+    document.addEventListener('DOMContentLoaded', function () {
+        const enterPage = document.querySelector('.enter-page');
+        const homepage = document.querySelector('.homepage');
+        let inactivityTimer = null;
+        const TEN_SECONDS = 20 * 60 * 1000;
 
-menuBtn.addEventListener('click', function () {
-    if (menuOverlay.classList.contains('active')) {
-        menuOverlay.classList.remove('active');
-        document.body.classList.remove('menu-open');
-        menuBtn.textContent = 'Menu';
-    } else {
-        menuOverlay.classList.add('active');
-        document.body.classList.add('menu-open');
-        menuBtn.textContent = 'Close';
-    }
-});
+        function showHomepage() {
+            if (enterPage) enterPage.style.display = 'none';
+            if (homepage) homepage.style.display = 'block';
+            // Reset body styles for homepage
+            document.body.style.overflow = 'auto';
+            document.body.style.background = '';
+            document.body.classList.remove('enter-active');
+            resetInactivityTimer();
+        }
 
-menuOverlay.addEventListener('click', function (e) {
-    if (e.target === this) {
-        menuOverlay.classList.remove('active');
-        document.body.classList.remove('menu-open');
-        menuBtn.textContent = 'Menu';
-    }
-});
+        function showEnterPage() {
+            if (enterPage) enterPage.style.display = 'block';
+            if (homepage) homepage.style.display = 'none';
+            // Prevent scrolling on enter-page
+            document.body.style.overflow = 'hidden';
+            document.body.classList.add('enter-active');
+            clearInactivityTimer();
+        }
+
+        function resetInactivityTimer() {
+            clearInactivityTimer();
+            inactivityTimer = setTimeout(() => {
+                showEnterPage();
+            }, TEN_SECONDS);
+        }
+
+        function clearInactivityTimer() {
+            if (inactivityTimer) {
+                clearTimeout(inactivityTimer);
+                inactivityTimer = null;
+            }
+        }
+
+        // Show enter page on load
+        showEnterPage();
+
+        // Click anywhere on enter page to go to homepage
+        if (enterPage) {
+            enterPage.addEventListener('click', function () {
+                showHomepage();
+            });
+        }
+
+        // Any interaction with the homepage resets the timer
+        if (homepage) {
+            homepage.addEventListener('mousemove', resetInactivityTimer);
+            homepage.addEventListener('mousedown', resetInactivityTimer);
+            homepage.addEventListener('touchstart', resetInactivityTimer);
+            homepage.addEventListener('keydown', resetInactivityTimer);
+        }
+    });
 </script>
 
 
 
+
+
+
+</body>
 
 </html>

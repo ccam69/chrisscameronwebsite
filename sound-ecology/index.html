@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
     <script src="/top-date.js" defer></script>
+    <script src="/menu-interaction.js" defer></script>
     <title>Chris Cameron's Website - Sound Ecology</title>
 </head>
 
@@ -247,33 +248,6 @@
         <span class="mobile-menu-link"><a href="/radio" class="overlay-link">Radio</a></span>
     </div>
     </div>
-
-
-    <script>
-const menuBtn = document.getElementById('menuBtn');
-const menuOverlay = document.getElementById('menuOverlay');
-
-menuBtn.addEventListener('click', function () {
-    if (menuOverlay.classList.contains('active')) {
-        menuOverlay.classList.remove('active');
-        document.body.classList.remove('menu-open');
-        menuBtn.textContent = 'Menu';
-    } else {
-        menuOverlay.classList.add('active');
-        document.body.classList.add('menu-open');
-        menuBtn.textContent = 'Close';
-    }
-});
-
-menuOverlay.addEventListener('click', function (e) {
-    if (e.target === this) {
-        menuOverlay.classList.remove('active');
-        document.body.classList.remove('menu-open');
-        menuBtn.textContent = 'Menu';
-    }
-});
-    </script>
-
 
 </body>
 

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="radio-styles.css">
   <script src="/radio/radio-song.js" defer></script>
   <script src="/radio/bakcground-img-radio.js" defer></script>
+  <script src="/menu-interaction.js" defer></script>
   <title>Chris Cameron's Website</title>
 </head>
 
@@ -61,32 +62,6 @@
       <span class="mobile-menu-link"><a href="/radio/" class="overlay-link">Radio</a></span>
     </div>
   </div>
-
-<script>
-const menuBtn = document.getElementById('menuBtn');
-const menuOverlay = document.getElementById('menuOverlay');
-
-menuBtn.addEventListener('click', function () {
-    if (menuOverlay.classList.contains('active')) {
-        menuOverlay.classList.remove('active');
-        document.body.classList.remove('menu-open');
-        menuBtn.textContent = 'Menu';
-    } else {
-        menuOverlay.classList.add('active');
-        document.body.classList.add('menu-open');
-        menuBtn.textContent = 'Close';
-    }
-});
-
-menuOverlay.addEventListener('click', function (e) {
-    if (e.target === this) {
-        menuOverlay.classList.remove('active');
-        document.body.classList.remove('menu-open');
-        menuBtn.textContent = 'Menu';
-    }
-});
-</script>
-
 
   <script src="https://w.soundcloud.com/player/api.js"></script>
   <script src="https://widget.mixcloud.com/media/js/widgetApi.js"></script>

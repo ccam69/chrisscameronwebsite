@@ -5,11 +5,12 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #000;
-  overflow-x: hidden;
-  padding-bottom: 60px
+  overflow-x: hidden !important;
+  margin-bottom: 60px;
 }
 .homepage {
-  display: none
+  display: none;
+  background: #000;
 }
 @font-face {
   font-family: Kulture;
@@ -117,6 +118,26 @@ a:hover {
   background-color: #69ca02;
   cursor: pointer;
   width: fit-content
+}
+.email-text-h1{
+  font-family: TASA;
+  font-size: 60pt;
+  color: #dbddf1;
+  text-shadow: 0 0 26px #dbddf1;
+  font-weight: 300;
+  line-height: 1.2;
+  transition: all .3s ease;
+  text-decoration: none;
+}
+.email-text-p{
+  font-family: TASA;
+  font-size: 14pt;
+  color: #dbddf1;
+  text-shadow: 0 0 26px #dbddf1;
+  font-weight: 300;
+  line-height: 1.2;
+  transition: all .3s ease;
+  text-decoration: none;
 }
 @media screen and (min-width:1720px) {
   h1 {
@@ -254,7 +275,12 @@ a:hover {
   #profile-image {
     max-height: 360px!important
   }
+  .email-text {
+    width: 90% !important;
+    transition: all .3s ease;
 }
+}
+
 @media screen and (max-width:800px) {
   .menu {
     display: none!important
@@ -265,7 +291,7 @@ a:hover {
   }
   .grid-container {
     padding: 0 1.2em!important;
-    margin-top: 70px!important;
+    margin-top: 4px!important;
     transition: all .3s ease
   }
   h1 {
@@ -287,6 +313,27 @@ a:hover {
     line-height: 1.4!important;
     transition: all .3s ease
   }
+  .email-text-h1{
+  font-family: TASA;
+  font-size: 24pt !important;
+  color: #dbddf1;
+  text-shadow: 0 0 26px #dbddf1;
+  font-weight: 300;
+  line-height: 1.2;
+  transition: all .3s ease;
+  text-decoration: none;
+}
+.email-text-p{
+  font-family: TASA;
+  font-size: 12pt;
+  color: #dbddf1;
+  text-shadow: 0 0 26px #dbddf1;
+  font-weight: 300;
+  line-height: 1.2;
+  transition: all .3s ease;
+  text-decoration: none;
+  text-align: left;
+}
   .grid-container {
     display: block!important
   }
@@ -493,15 +540,34 @@ a:hover {
     transition: all .3s ease;
     padding: 0 1.2em!important
   }
+    .email-text {
+    width: 100% !important;
+    gap: 14px !important; 
+    transition: all .3s ease;
 }
+}
+
+section.text-container {
+    margin-bottom: 48px;
+}
+
 .episode-link-item p {
   margin-top: 6px;
   padding-bottom: 36px
 }
 .top-date-text {
-  display: block;
-  margin-top: 14px;
-  position: absolute
+  width: 100vw;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  padding-top: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  background: transparent; 
+  pointer-events: none; 
 }
 .menu {
   display: flex;
@@ -535,7 +601,7 @@ a:hover {
 .grid-container {
   display: grid;
   column-gap: 20px;
-  margin-top: 20px;
+  margin-top: -15px;
   padding: 0 10em;
   transition: all .3s ease
 }
@@ -611,4 +677,20 @@ a:hover {
   max-width: 100%;
   box-sizing: border-box;
   display: block
+}
+
+.email-text {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 24px; 
+    width: 80%;
+    transition: all .3s ease;
+}
+
+.email-text-h1 {
+    display: block;
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    white-space: nowrap;
 }
