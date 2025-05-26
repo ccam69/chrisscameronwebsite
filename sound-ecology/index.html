@@ -17,7 +17,7 @@
     <div class="grid-container">
         <section class="menu">
             <span>
-                <a href="/" class="menu-item">Home</a>
+                <a href="/" class="menu-item" id="homeMenuLink" onclick="sessionStorage.setItem('skipEnter', '1')">Home</a>
                 <div class="line"></div>
                 <a href="/sound-ecology" class="menu-item">Sound Ecology</a>
                 <div class="line"></div>
@@ -241,7 +241,7 @@
     </div>
     <div class="menu-overlay" id="menuOverlay">
     <div class="menu-overlay-content">
-        <span class="mobile-menu-link"><a href="/" class="overlay-link">Home</a></span>
+        <span class="mobile-menu-link"><a href="/" class="overlay-link" id="homeMenuLink" onclick="sessionStorage.setItem('skipEnter', '1')">Home</a></span>
         <hr class="overlay-divider">
         <span class="mobile-menu-link"><a href="/sound-ecology" class="overlay-link">Sound Ecology</a></span>
         <hr class="overlay-divider">
